@@ -42,7 +42,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LK_SQLTBL_WATERMRK_DW').output.value",
+						"value": "@activity('LKUP_SQLTBL_WATERMRK_DW').output.value",
 						"type": "Expression"
 					},
 					"activities": [

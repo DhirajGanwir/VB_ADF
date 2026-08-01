@@ -1,9 +1,17 @@
 {
-	"name": "DS_SQLSERVER_TBLLKUP",
+	"name": "DS_LKUP_MAX_VALUE",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_PARENT_SQLSERVER_DW",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"schemaname": {
+				"type": "string"
+			},
+			"tablename": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "SqlServerTable",
