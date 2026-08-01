@@ -1,0 +1,21 @@
+{
+	"name": "SqlServer2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "LAPTOP-ITSGGQ68\\SQLEXPRESS",
+			"database": "Retail_DW_Dev",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Dhiraj",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwMzBmNTUxMy1hZGM3LTQ3YTItYjM2YS1kYjM3ZmZjY2JhZDMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "DhirajSelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
