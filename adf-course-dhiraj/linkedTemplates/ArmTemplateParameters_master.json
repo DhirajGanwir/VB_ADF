@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-course-dhiraj"
+		},
+		"ADLS_Sql_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_ONPrem_SqlServer_DW_password": {
+			"value": ""
+		},
+		"LS_PARENT_SQLSERVER_DW_password": {
+			"value": ""
+		},
+		"LS_datalake_Dhiraj_accountKey": {
+			"value": ""
+		},
+		"ADLS_Sql_Parquet_properties_typeProperties_url": {
+			"value": "https://dhirajadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_ONPrem_SqlServer_DW_properties_typeProperties_server": {
+			"value": "LAPTOP-ITSGGQ68\\SQLEXPRESS"
+		},
+		"LS_ONPrem_SqlServer_DW_properties_typeProperties_database": {
+			"value": "Retail_DW_Dev"
+		},
+		"LS_ONPrem_SqlServer_DW_properties_typeProperties_userName": {
+			"value": "Dhiraj"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_server": {
+			"value": "LAPTOP-ITSGGQ68\\SQLEXPRESS"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_database": {
+			"value": "Retail_DW_Dev"
+		},
+		"LS_PARENT_SQLSERVER_DW_properties_typeProperties_userName": {
+			"value": "Dhiraj"
+		},
+		"LS_datalake_Dhiraj_properties_typeProperties_url": {
+			"value": "https://storageadfdhiraj.dfs.core.windows.net/"
+		},
+		"Souce GIT_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
