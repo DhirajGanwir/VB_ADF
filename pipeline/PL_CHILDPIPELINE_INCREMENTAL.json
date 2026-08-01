@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "LKUP_MAX_VALUE",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -20,7 +20,7 @@
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "LKUP_MAX_VALUE",
 						"dependencyConditions": [
 							"Succeeded"
 						]
