@@ -1,0 +1,15 @@
+{
+	"name": "adf-course-dhiraj",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ccaf27fa-8516-4e7d-9e4b-7572e76273c0",
+		"tenantId": "9ccb5b27-7910-4649-abdd-2ebc45ae7aec"
+	}
+}

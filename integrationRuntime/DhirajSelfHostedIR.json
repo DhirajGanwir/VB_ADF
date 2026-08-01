@@ -1,0 +1,7 @@
+{
+	"name": "DhirajSelfHostedIR",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Local SSMS self Hosted IR"
+	}
+}
