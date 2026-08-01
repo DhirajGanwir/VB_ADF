@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "LK_SQLTBL_WATERMRK_DW",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -13,14 +13,27 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT TableSchema, TableName, WatermarkColumn, LastLoadValue FROM dbo.ADF_Watermark_Table;",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_SQLSERVER_TBLLKUP",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
+				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "ForEach_SQLTBL",
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "LK_SQLTBL_WATERMRK_DW",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -28,9 +41,13 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('LK_SQLTBL_WATERMRK_DW').output.value",
+						"type": "Expression"
+					},
 					"activities": [
 						{
-							"name": "Execute Pipeline1",
+							"name": "EXEC_SQL_INCREMENTAL_PIPELINE",
 							"type": "ExecutePipeline",
 							"dependsOn": [],
 							"policy": {
