@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LK_SQLTBL_WATERMRK_DW",
+				"name": "LKUP_SQLTBL_WATERMRK_DW",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -33,7 +33,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "LK_SQLTBL_WATERMRK_DW",
+						"activity": "LKUP_SQLTBL_WATERMRK_DW",
 						"dependencyConditions": [
 							"Succeeded"
 						]
